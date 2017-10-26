@@ -135,7 +135,7 @@ class ContentEntitySchemaConfigForm extends ConfigFormBase {
             ],
             '#title' => $info['label'],
             '#description' => $this->t('Add the <strong>%type</strong> type to the schema.', [
-              '%type' => StringHelper::camelCase([$type->id(), $bundle]),
+              '%type' => StringHelper::camelCase($type->id(), $bundle),
             ]),
           ];
 

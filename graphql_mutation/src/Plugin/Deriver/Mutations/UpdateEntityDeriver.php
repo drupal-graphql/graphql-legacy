@@ -67,7 +67,7 @@ class UpdateEntityDeriver extends DeriverBase implements ContainerDeriverInterfa
               'multi' => FALSE,
             ],
             'input' => [
-              'type' => StringHelper::camelCase([$entityTypeId, $bundleName, 'update', 'input']),
+              'type' => StringHelper::camelCase($entityTypeId, $bundleName, 'update', 'input'),
               'nullable' => FALSE,
               'multi' => FALSE,
             ],
